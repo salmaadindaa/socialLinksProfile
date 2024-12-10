@@ -1,0 +1,95 @@
+:root {
+  --primary-green: hsl(75, 94%, 57%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --neutral-dark-grey: hsl(0, 0%, 12%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--neutral-off-black);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--neutral-dark-grey);
+  color: var(--neutral-white);
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 0.75rem;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 75px;
+  margin-bottom: 1.5rem;
+}
+.card h1 {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.card .location {
+  color: var(--primary-green);
+  /* font-size: 14px; */
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.card .description {
+  margin-bottom: 1rem;
+}
+
+.card ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.card ul li a {
+  display: block;
+  background-color: var(--neutral-grey);
+  color: var(--neutral-white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+.card ul li a:hover {
+  background-color: var(--primary-green);
+  color: var(--neutral-off-black);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Quaries */
+/* Desktop */
+@media (max-width: 1440px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Mobile */
+@media (max-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+}
